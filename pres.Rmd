@@ -1,0 +1,20 @@
+---
+title: "Week 3 Assignment"
+author: Song Kim
+date: August 8, 2020
+output: ioslides_presentation
+---
+
+
+## Plot
+
+```{r plot}
+library(plotly)
+zc <-matrix(nrow = 180, ncol = 180)
+for (i in c(1:180)) {
+    for (j in c(1:180)) {
+        zc[i,j] = sin((i-1)/90*pi)*cos((j-1)/90*pi)
+    }
+}
+plot_ly(z = ~zc, type = "surface")
+```
