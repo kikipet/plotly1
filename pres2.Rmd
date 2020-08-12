@@ -8,7 +8,7 @@ output: ioslides_presentation
 
 ## Plot
 
-```{r plot}
+```{r plot, warning=FALSE}
 library(plotly)
 plot_ly(txhousing, x=~sales, y=~median, color=~city, type="scatter")
 ```
