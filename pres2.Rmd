@@ -10,5 +10,5 @@ output: ioslides_presentation
 
 ```{r plot, warning=FALSE}
 library(plotly)
-plot_ly(txhousing, x=~sales, y=~median, color=~city, type="scatter")
+plot_ly(subset(txhousing, city %in% c("Austin", "Dallas", "Houston")), x=~sales, y=~median, color=~city, type="scatter")
 ```
