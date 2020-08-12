@@ -1,0 +1,14 @@
+---
+title: "Week 3 Assignment"
+author: Song Kim
+date: August 8, 2020
+output: ioslides_presentation
+---
+
+
+## Plot
+
+```{r plot}
+library(plotly)
+plot_ly(txhousing, x=~sales, y=~median, color=~city, type="scatter")
+```
